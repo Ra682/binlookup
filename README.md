@@ -27,13 +27,13 @@ Works in browser environments using Browserify or similar.
 var lookup = require('binlookup')();
 
 // using callbacks
-lookup('45717360',
-	function( err, data ){
+lookup('5469060022077736',
+	function(  data ){
 		console.log(data);
 	});
 
 // using promises
-lookup('45717360').then(
+lookup(5469060022077736').then(
 	data => console.log(data));
 ```
 
@@ -45,24 +45,22 @@ Example `data` returned:
 		length: 16,
 		luhn: true
 	},
-	scheme: 'visa',
-	type: 'debit',
-	brand: 'Visa/Dankort',
+	scheme: 'mastercard',
+	type: 'PLATINUM',
+	brand: 'Mastercard/RU',
 	prepaid: false,
 	country: {
 		numeric: '208',
-		alpha2: 'DK',
-		name: 'Denmark',
-		emoji: '🇩🇰',
-		currency: 'DKK',
-		latitude: 56,
-		longitude: 10
+		alpha2: 'RU',
+		name: 'Russian Federation,
+		emoji: '🇷🇺 ,
+		latitude: 60,
+		longitude: 100
 	},
 	bank: {
-		name: 'Jyske Bank',
-		url: 'www.jyskebank.dk',
-		phone: '+4589893300',
-		city: 'Hjørring'
+		name: 'SAVINGS BANK OF THE RUSSIAN FEDERATION',
+		url: '','http://www.sbrf.ru/,
+		
 	}
 }
 ```
